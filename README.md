@@ -1,4 +1,4 @@
-﻿# CommentCleaner
+# CommentCleaner
 
 `CommentCleaner` is a C# CLI tool that removes comments from a single file or an entire folder.
 
@@ -30,20 +30,47 @@ It edits files in place, supports recursive folder processing, and can create ba
 From inside the project folder:
 
 ```powershell
-cd "C:\Users\User\Desktop\Comment\CommentCleaner"
+cd "C:\Users\User\Desktop\Comment"
 dotnet run -- "C:\path\to\file.lua"
 ```
 
 From outside the project folder:
 
 ```powershell
-dotnet run --project ".\CommentCleaner\CommentCleaner.csproj" -- "C:\path\to\file.lua"
+dotnet run --project "C:\Users\User\Desktop\Comment\CommentCleaner.csproj" -- "C:\path\to\file.lua"
 ```
 
 Process a folder:
 
 ```powershell
-dotnet run --project ".\CommentCleaner\CommentCleaner.csproj" -- "C:\path\to\folder"
+dotnet run --project "C:\Users\User\Desktop\Comment\CommentCleaner.csproj" -- "C:\path\to\folder"
+```
+
+## How It Works (Example)
+
+Input file (`input.lua`) before:
+
+```lua
+-- This is a full comment line
+local speed = 25 -- inline comment
+
+--[[ block comment ]]
+local color = "#fff" -- keep this value
+print("https://example.com") // remove this
+```
+
+Run:
+
+```powershell
+dotnet run --project "C:\Users\User\Desktop\Comment\CommentCleaner.csproj" -- "C:\Users\User\Desktop\Comment\input.lua"
+```
+
+Output file (`input.lua`) after:
+
+```lua
+local speed = 25
+local color = "#fff"
+print("https://example.com")
 ```
 
 ## Options
@@ -57,30 +84,30 @@ dotnet run --project ".\CommentCleaner\CommentCleaner.csproj" -- "C:\path\to\fol
 - `-h`, `--help`  
   Print help.
 
-## Examples
+## More Examples
 
 Single file:
 
 ```powershell
-dotnet run --project ".\CommentCleaner\CommentCleaner.csproj" -- "C:\Users\User\Desktop\Comment\input.lua"
+dotnet run --project "C:\Users\User\Desktop\Comment\CommentCleaner.csproj" -- "C:\Users\User\Desktop\Comment\input.lua"
 ```
 
 Folder with backups:
 
 ```powershell
-dotnet run --project ".\CommentCleaner\CommentCleaner.csproj" -- "C:\Users\User\Desktop\Comment" --backup
+dotnet run --project "C:\Users\User\Desktop\Comment\CommentCleaner.csproj" -- "C:\Users\User\Desktop\Comment" --backup
 ```
 
 Dry run:
 
 ```powershell
-dotnet run --project ".\CommentCleaner\CommentCleaner.csproj" -- "C:\Users\User\Desktop\Comment" --dry-run
+dotnet run --project "C:\Users\User\Desktop\Comment\CommentCleaner.csproj" -- "C:\Users\User\Desktop\Comment" --dry-run
 ```
 
 ## Build a Standalone Executable
 
 ```powershell
-cd "C:\Users\User\Desktop\Comment\CommentCleaner"
+cd "C:\Users\User\Desktop\Comment"
 dotnet publish -c Release
 ```
 
