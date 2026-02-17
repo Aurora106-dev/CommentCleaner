@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\Comment\CommentCleaner\bin\Release\net10.0\CommentCleaner.exe
+C:\Users\User\Desktop\Comment\CommentCleaner\bin\Release\net10.0\CommentCleaner.deps.json
+C:\Users\User\Desktop\Comment\CommentCleaner\bin\Release\net10.0\CommentCleaner.runtimeconfig.json
+C:\Users\User\Desktop\Comment\CommentCleaner\bin\Release\net10.0\CommentCleaner.dll
+C:\Users\User\Desktop\Comment\CommentCleaner\bin\Release\net10.0\CommentCleaner.pdb
+C:\Users\User\Desktop\Comment\CommentCleaner\obj\Release\net10.0\CommentCleaner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Comment\CommentCleaner\obj\Release\net10.0\CommentCleaner.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Comment\CommentCleaner\obj\Release\net10.0\CommentCleaner.AssemblyInfo.cs
+C:\Users\User\Desktop\Comment\CommentCleaner\obj\Release\net10.0\CommentCleaner.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Comment\CommentCleaner\obj\Release\net10.0\CommentCleaner.dll
+C:\Users\User\Desktop\Comment\CommentCleaner\obj\Release\net10.0\refint\CommentCleaner.dll
+C:\Users\User\Desktop\Comment\CommentCleaner\obj\Release\net10.0\CommentCleaner.pdb
+C:\Users\User\Desktop\Comment\CommentCleaner\obj\Release\net10.0\CommentCleaner.genruntimeconfig.cache
+C:\Users\User\Desktop\Comment\CommentCleaner\obj\Release\net10.0\ref\CommentCleaner.dll
